@@ -1,0 +1,103 @@
+#root {
+    background: black;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+}
+
+.singin {
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    background: black;
+    width: 500px;
+    height: 500px;
+    padding: 20px;
+    margin: 0px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+}
+
+.MuiTypography-h5{
+    margin-top: 0px !important; 
+    margin-bottom: 40px !important;
+}
+
+.MuiGrid-container{
+    margin-top: 20px !important;
+}
+
+.MuiFormControlLabel-root{
+    margin-top: 50px !important;
+}
+
+.MuiFormControlLabel-root{
+    margin-top: 20px !important;
+}
+
+.singin:first-child {
+    border: 2px solid red !important;
+}
+
+#email-label {
+    color: rgba(255, 255, 255, 0.5) !important;
+}
+
+#password-label {
+    color: rgba(255, 255, 255, 0.5)!important;
+}
+
+.MuiCheckbox-root {
+    color: rgba(255, 255, 255, 0.5) !important;
+}
+
+.PrivateSwitchBase-input-132 {
+    color: rgba(255, 255, 255, 0.5)!important;
+}
+
+.MuiTypography-body1 {
+    color: white
+}
+
+button {
+    background: white !important;
+    color: black !important;
+}
+
+.MuiButton-fullWidth {
+    margin-top: 60px !important;
+    margin-bottom: 10px !important;
+}
+
+.MuiFormLabel-root {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.MuiInput-underline:after {
+    border-bottom: 2px solid white!important;
+}
+
+.MuiFormLabel-root.Mui-focused {
+    color: white !important;
+}
+
+.MuiInput-underline:before {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5)!important;
+}
+
+.singin p, h1, h2, h3, input {
+    color: white !important; 
+}
+
+.singin a{
+    color: rgba(255, 255, 255, 0.5);
+    transition: color 0.2s;
+    transition-timing-function: ease-in;
+
+}
+
+.singin a:hover{
+    color: rgba(255, 255, 255, 1);
+}
+

@@ -7,9 +7,6 @@ import Add from '../Add/Add';
 
 function Brother() {
 
-    const { isOver, setIsOver } = React.useState(false);
-    const divRef = React.useRef();
-
 
     return (
         <div className="menu" >

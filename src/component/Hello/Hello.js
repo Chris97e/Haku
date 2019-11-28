@@ -1,10 +1,7 @@
 import React from 'react';
 import './Hello.css'
-import fetch from 'node-fetch';
-import Unsplash from 'unsplash-js';
 
-//using fetch to simplify the fetch XD
-global.fetch = fetch;
+
 
 function Hello(props) {
 
@@ -17,14 +14,13 @@ function Hello(props) {
         window.addEventListener('mousewheel', (event) => {
 
 
+        
 
-            if (divRef.current.offsetTop <= -840) {
-                divRef.current.style.display = "none";
-
-            }
+           
 
             setScrollPostition((prev) => {
 
+                
 
                 if (divRef.current.offsetTop >= 0 && event.wheelDeltaY >= 0) {
                     return prev;
@@ -50,7 +46,6 @@ function Hello(props) {
 
 
     }, []);
-
 
 
     return (<div className="hello" style={{ top: scrollPostition }} ref={divRef}>
