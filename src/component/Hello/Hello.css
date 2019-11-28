@@ -1,0 +1,73 @@
+.hello{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-flow: nowrap column;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    background: black;
+    
+    
+}
+
+.etiqueta{
+    border: 1px solid white;
+    width: 50%;
+    height: 40%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    animation-delay: 1s;
+    background: black;
+}
+
+.haku{
+    color: white;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-content: center;
+}
+
+h1{
+    
+    
+    font-size: 190px;
+    margin-top: -30px;
+    animation-delay: 3s;
+}
+
+.bottom{
+    color: white;
+    font-size: 15px;
+    font-weight: 100;
+    margin-top: 120px;
+    position: absolute;
+    font-style: italic;
+    animation-delay: 3s;
+
+}
+
+.imagine{
+    
+    color: white;
+    font-size: 20px;
+    font-weight: 100;
+    animation-delay: 4s;
+    margin-top: -140px;
+    font-style: italic;
+    
+    
+    
+    
+}
+
+p{
+    color: white;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-content: center;
+}

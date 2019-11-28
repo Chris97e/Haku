@@ -1,0 +1,73 @@
+h1{
+    color: black;
+
+}
+
+.scketch{
+    border: 2px solid black;
+    width: 100vw;
+    height: 100vh;   
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    background: black;
+    
+}
+
+.type{
+    position: fixed;
+     border: 1px solid white;
+     width: 50vw;
+     height: 90vh;
+     display: flex;
+     flex-flow: column wrap;
+     justify-content: center;
+     align-content: center;
+
+     
+
+}
+
+
+.texto{
+
+    
+    width: 90%;
+    height: 90%;
+    padding: 10px;
+    display: block;
+    overflow-y: auto;
+    color: white;
+    
+
+
+
+}
+
+
+
+.texto:focus{
+    outline: none;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    
+  }
+
+  ::-webkit-scrollbar-track {
+    background: black;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: white;
+    
+  }
+  ::-webkit-scrollbar-thumb {
+    background:rgb(255, 255, 255, 0.2);
+    border-radius: 10px;
+    
+  }
+
+
+

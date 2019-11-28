@@ -1,0 +1,25 @@
+.caja{
+    width: 200px;
+    height: 300px;
+    border: 1px solid white;
+    padding: 20px;
+    margin: 50px;
+    transition: background 1s;
+    
+}
+
+.caja:hover{
+    background: white;
+    color: black;
+}
+
+.caja:hover p{
+    
+    color: black;
+}
+
+p{
+    color: white;
+    transition: color 1s;
+}
+
