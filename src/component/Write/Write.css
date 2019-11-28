@@ -2,7 +2,11 @@ h1{
     color: black;
 
 }
-
+.writer{
+  position: fixed;
+  display: none;
+  z-index: 10;
+}
 .scketch{
     border: 2px solid black;
     width: 100vw;

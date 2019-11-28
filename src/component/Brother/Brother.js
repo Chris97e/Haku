@@ -11,6 +11,7 @@ import DialogActions from '@material-ui/core/DialogActions';
 import DialogContent from '@material-ui/core/DialogContent';
 import DialogContentText from '@material-ui/core/DialogContentText';
 import DialogTitle from '@material-ui/core/DialogTitle';
+import Write from '../Write/Write';
 
 
 function Brother(props) {
@@ -18,31 +19,32 @@ function Brother(props) {
     const [open, setOpen] = React.useState(false);
     const [tittle, setTittle] = React.useState("");
     const [error, setError] = React.useState(null);
-    const [docs, setDocs] = React.useState({});
+    const [docs, setDocs] = React.useState([]);
     var dataObject = {};
-    
-    const handleData = () => {
+    console.log(docs);
+
+
+    React.useEffect(() => {
         let db = fb.firestore();
         db.collection('titles').get().then((querySnapshot) => {
+            var docsArray = [];
             querySnapshot.forEach((event) => {
 
                 var tempDoc = {
-                    title:event._document.proto.fields.title.stringValue,
-                    text:event._document.proto.fields.text.stringValue,
-                    id:event.id
+                    title: event._document.proto.fields.title.stringValue,
+                    text: event._document.proto.fields.text.stringValue,
+                    id: event.id
                 };
-                
-                setDocs(tempDoc);
-            });
-        }).then( ()=>{
-            
-            console.log(docs);
-        }
-           );
-    }
 
-    React.useEffect(() => {
-        handleData();
+
+                docsArray.push(tempDoc)
+
+
+            });
+
+            setDocs(docsArray);
+
+        });
     }, []);
 
     const handleLogout = () => {
@@ -100,6 +102,8 @@ function Brother(props) {
 
     return (
         <div className="menu" >
+            
+            
 
             <Dialog open={open} className="createname" onClose={handleClose} aria-labelledby="form-dialog-title">
                 <DialogTitle id="form-dialog-title">Time to write!</DialogTitle>
@@ -144,10 +148,8 @@ function Brother(props) {
 
             <div className="elementos animated slideInUp delay-2s">
                 <Add onClick={handleClickOpen} />
+                {docs.map((doc, index) => <Visual id={doc.id} title={doc.title} key={doc.id}/>)}
                 
-                <Visual />
-                <Visual />
-                <Visual />
 
             </div>
 

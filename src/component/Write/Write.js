@@ -5,9 +5,10 @@ import Dream from '../Dream/Dream';
 import ContentEditable from 'react-contenteditable';
 
 
-function Write() {
+function Write(props) {
 
-    const [words, setWords] = React.useState("Click me to write");
+    const [id, setId]= React.useState(props.id);
+    const [words, setWords] = React.useState(props.text===""?props.text:"Click me to write");
     const [wordsArray, setWordsArray] = React.useState([]);
     
     function removeItemFromArr ( arr, item ) {
@@ -25,7 +26,7 @@ function Write() {
     }
 
 
-    return (<div className="container scketch animated fadeInUp">
+    return (<div className="writer container scketch animated fadeInUp">
 
         <Dream props={words}></Dream>
         <div className="type">

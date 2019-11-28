@@ -3,9 +3,10 @@ import './Visual.css';
 
 
 
-function Visual() {
+function Visual( props) {
     return (
-        <div className="caja "><p>-----------------------------------------------------------------------------------------------</p></div>
+        <div className="caja "><br></br><p>{props.title}</p><br></br><br></br><p>-----------------------------------------------------------------------------------------------</p>
+        </div>
     );
 }
 
