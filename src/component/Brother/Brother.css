@@ -4,19 +4,49 @@
     height: 100vh;
     display: flex;
     flex-flow: column nowrap;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
+    align-content: space-around;
     background: black;
+}
+.upper{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
 }
 
 h1{
     color:white;
 }
 
+.MuiDialog-paperWidthSm {
+    background-color: black !important;
+    border: 1px solid rgba(255, 255, 255, 0.5) !important;
+    padding: 10px;
+    
+}
+.MuiDialogActions-spacing{
+ 
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
+.MuiDialog-container{
+background: rgba(0, 0, 0, 0.8)
+}
+
+.MuiDialog-paperWidthSm p{
+    color: rgba(255, 255, 255, 0.5) !important;
+}
+
+.createname{
+    border: 1px solid rgba(255, 255, 255, 0.5) !important;
+}
+
 .text{
     color: rgba(255, 255, 255, 0.4);
     margin-top: 23px;
-    
+    font-weight: 200 !important;
     width: auto;
     text-align: initial;
     padding-left: 20px;
@@ -45,5 +75,7 @@ h1{
     align-items: center;
     justify-items: center;
     justify-content: center;
+    overflow-y: scroll;
+    animation-delay: 0.7s;
     
 }

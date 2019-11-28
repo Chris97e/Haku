@@ -1,31 +1,18 @@
 import React from 'react';
 import './Add.css'
-import {
-    BrowserRouter as Router,
-    Link
-  } from "react-router-dom";
 
 
 
 
 
-function Add() {
 
-    
-    
-    function handleClick (e){
-        
-        e.preventDefault();
-        
-        
-    }
-    
+function Add(props) {
+
     return (
-        <Link to="/add">
-        <div className="adcaja">
+
+        <div className="adcaja" onClick={props.onClick}>
             <p>+</p>
         </div>
-        </Link>
-        );
-    }
-    export default Add;
+    );
+}
+export default Add;

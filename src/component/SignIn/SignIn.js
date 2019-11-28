@@ -30,8 +30,10 @@ export default function SignIn(props) {
             });
     }
 
+    console.log(props.user);
+
     if (props.user) {
-        return <Redirect to="/" />
+        return <Redirect to="/home" />
     }
 
     return (
@@ -43,7 +45,7 @@ export default function SignIn(props) {
                     Sign in
                 </Typography>
 
-                <form noValidate>
+                <form onSubmit={handleSubmit}>
                     <TextField
                         margin="normal"
                         required
@@ -77,6 +79,7 @@ export default function SignIn(props) {
                     >
                         Sign In
                     </Button>
+                    {error && <Typography>{error}</Typography>}
                     <Grid container>
                         <Grid item xs>
                             <Link variant="body2">

@@ -7,16 +7,7 @@ const endpoint = 'https://api.unsplash.com/search/photos';
 
 
 function Dream(props) {
-   // console.log(props);
-   function search(){
-        fetch(`${endpoint}?query=$hola&client_id=${clientId}`).then(response => {
-
-            return response.json();
-    
-        }).then(json => {
-            console.log(json);
-        });
-    }
+   
 
     
     return (<div>

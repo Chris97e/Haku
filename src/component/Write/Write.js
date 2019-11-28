@@ -25,7 +25,7 @@ function Write() {
     }
 
 
-    return (<div className="container scketch">
+    return (<div className="container scketch animated fadeInUp">
 
         <Dream props={words}></Dream>
         <div className="type">
